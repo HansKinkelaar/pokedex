@@ -1,31 +1,21 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
+  <div>
+    <!--INÍCIO HEADER-->
+  
+    <nav class="navbar bg-dark navbar-dark justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <router-link class="nav-link px-5 text-white" to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link px-5 text-white" to="/about">Sobre o Projeto.</router-link>
+          </li>
+        </ul>
     </nav>
-    <router-view/>
+    <!--FIM HEADER-->
+
+    <div class="container mt-5">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>

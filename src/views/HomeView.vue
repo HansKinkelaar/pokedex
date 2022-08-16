@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <div class="frase" data-aos="fade-right" data-aos-duration="3000">
-      <h3> <span>Find</span> all your favorite <span>Pokemon</span></h3>
-      <p>You can know the type of Pokemon, its strengths, disadvantages and abilities</p>
-      <button> <router-link to="/pokedex">See pokemons</router-link> </button>
+      <h3> <span>Encontre</span> tudo sobre seus pokémons <span>favoritos</span></h3>
+      <p>Você consiguirá ver tipos, forças, desvantagens e habilidades</p>
+      <button> <router-link to="/pokedex">Ver mais pokemons</router-link> </button>
     </div> 
     <div data-aos="fade-left" data-aos-duration="3000">
        <img src="../assets/img/BannerPokemon.png" alt="Pokemon"/>
@@ -63,8 +63,8 @@
 
   .frase button{
     margin-top: 60px;
-    width: 150px;
-    height: 40px;
+    width: 170px;
+    height: 50px;
     background-color: #EF4036;
     color: #fff;
     font-size: 18px;

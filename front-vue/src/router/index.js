@@ -1,18 +1,22 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-
-Vue.use(VueRouter);
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('../components/pages/list-pokemons/ListPokemonsComponent.vue'),
+    component: HomeView
   },
-];
+  {
+    path: '/pokedex',
+    name: 'Pokedex',
+    component: () => import('../views/Pokedex.vue')
+  }
+]
 
-const router = new VueRouter({
-  routes,
-});
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
+})
 
-export default router;
+export default router

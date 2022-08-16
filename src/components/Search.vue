@@ -1,16 +1,8 @@
 <template>
     <div class="search-pok">
-        <h3>+500 <span>Pokemons</span> or you to choose your favorite</h3>
+        <h3> Mais de 500 Pokémons,<span> se divirta </span> explorando todos!</h3>
     </div>
 </template>
-
-<script>
-   
-    export default{
-        name: 'Search'
-    }
-
-</script>
 
 <style scoped>
 
@@ -18,8 +10,6 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin: 50px 0px 50px 0px;
 }
 
 .search-pok h3{

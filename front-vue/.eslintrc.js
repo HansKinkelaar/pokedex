@@ -11,6 +11,7 @@ module.exports = {
     parser: '@babel/eslint-parser',
   },
   rules: {
+    'vue/multi-word-component-names': 'off',
     'no-trailing-spaces': 'off',
     'vuejs-accessibility/anchor-has-content': 'off',
     'max-len': 'off',
